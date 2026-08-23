@@ -1,0 +1,15 @@
+{
+  "id": "raydino-self-supervised-cxr",
+  "title": "Advancing human-centric AI for robust X-ray analysis through holistic self-supervised learning",
+  "authors": ["Théo Moutakanni", "Piotr Bojanowski", "Guillaume Chassagnon", "Céline Hudelot", "Armand Joulin", "Yann LeCun", "Matthew J. Muckley", "Maxime Oquab", "Marie-Pierre Revel", "Maria Vakalopoulou"],
+  "venue": "Nature Communications",
+  "year": 2026,
+  "source": "OpenAlex",
+  "url": "https://doi.org/10.1038/s41467-026-76076-4",
+  "abstract": "Abstract Foundational artificial intelligence models are gaining traction in various applications, including medical fields like radiology. However, medical foundation models are often tested on limited tasks, leaving their generalisability and biases unexplored. Here we introduce RayDINO, a large-scale self-supervised visual encoder for chest X-rays trained on 840,000 images and evaluated on 82,000 images sourced from 12 publicly available datasets. We compare RayDINO to previous state-of-the-art models across nine radiology tasks, from classification and dense segmentation to text generation, and provide an in-depth analysis of population, age and sex biases of our model. Our findings suggest that self-supervision enables patient-centric analysis useful in clinical workflows, allowing for a more holistic interpretation of X-rays. With RayDINO and small task-specific adapters, we reach state-of-the-art results and improve generalization to unseen populations while mitigating bias, illustrating the versatility and robustness of foundation models.",
+  "axes": ["기관 간 일반화", "파운데이션 모델의 편향과 강건성"],
+  "takeaway": "84만 장의 흉부 X-ray로 학습한 자기지도 시각 인코더 RayDINO가 12개 공개 데이터셋 82,000장에 대해 9개 방사선 과제에서 최고 성능을 보이며 연령·성별·인구집단별 편향을 정량적으로 평가했다.",
+  "relevance": "본 코호트는 남녀 각 136명(50%씩)으로 성비가 균형 잡혀 있고 연령 범위가 9~87세(평균 51.5세)로 넓어, 이 논문이 강조하는 연령·성별 편향 분석과 유사한 층화 평가가 가능한 구성이다. 또한 5개 기관(INST01~05)에서 48~62건씩 수집되어 기관 간 편향 점검에도 적합하다.",
+  "caveat": "본 데이터셋은 판독문·영상 원본을 직접 공유하지 않는 마스킹된 뷰이므로, RayDINO 같은 파운데이션 모델을 실제로 재학습하거나 fine-tuning해 성능을 재현할 수는 없다.",
+  "check": "우리 5개 기관 하위집단에서 소견 없음(No Finding) 대 이상 소견 비율이 기관별로 차이가 있는지 확인하고, 이것이 편향 분석의 층화 변수로 쓸 만한지 검토할 가치가 있다."
+}
